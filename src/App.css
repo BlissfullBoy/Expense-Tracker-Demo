@@ -1,0 +1,254 @@
+body {
+    margin: 0px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.top h1 {
+    font-size: 35px;
+    color: #7469B6;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search h1 {
+    color: #7469B6;
+    width: 100%;
+    font-size: 35px;
+    margin: 15px;
+}
+
+.search input {
+    background-color: #7469B6;
+    border: none;
+    width: 250px;
+    height: 35px;
+    color: #ffff;
+    margin: 15px;
+}
+
+.search input::placeholder {
+    color: #ffff;
+    padding-left: 10px;
+}
+
+.search button {
+    border: none;
+    background: none;
+    color: #ffff;
+    position: relative;
+    left: -10%;
+}
+
+.budget input {
+    margin: 15px;
+    background-color: #7469B6;
+    border: none;
+    width: 240px;
+    height: 35px;
+    color: #ffff;
+    margin: 15px;
+}
+
+.budget h1 {
+    margin: 15px;
+}
+
+.budget input::placeholder {
+    color: #ffff;
+    padding-left: 10px;
+}
+
+.spent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spent h3 {
+    margin: 0px;
+    font-size: 30px;
+    color: #7469B6;
+}
+
+.spent h1 {
+    margin: 20px;
+    font-size: 30px;
+    color: #7469B6;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div input {
+    border-radius: 15px;
+    height: 20px;
+
+}
+
+.expense {
+    border: none;
+    width: 260px;
+    margin: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #7469B6, #AD88C6);
+    color: white;
+}
+
+.expense h1 {
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.expense p {
+    margin: 5px;
+    padding-left: 10px;
+}
+
+.expense button {
+    border: none;
+    background: none;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.expense #del {
+    color: red;
+}
+
+.expense #ed {
+    color: green;
+}
+
+#add {
+    color: blue;
+    border: none;
+    background-color: #AD88C6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    position: relative;
+    left: 90%;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to right, #7469B6, #AD88C6);
+}
+
+.add h1 {
+    color: #ffffff;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.add h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.add input {
+    width: 250px;
+    height: 30px;
+    border: none;
+    background-color: #7469B6;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.add input::placeholder {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+.add input[type="date"] {
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-weight: bolder;
+    width: 245px;
+}
+
+.add .btns input {
+    width: 120px;
+}
+
+.add .btns #backed {
+    color: #ffffff;
+    background-color: #7469B6;
+    border: none;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .expense {
+        border: none;
+        width: 200px;
+        margin: 20px;
+        border-radius: 10px;
+        /* background-color:#AD88C6; */
+        background: linear-gradient(to right, #7469B6, #AD88C6);
+        color: white;
+    }
+
+    .order {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .top h1 {
+        font-size: 25px;
+    }
+
+    .search h1 {
+        font-size: 25px;
+    }
+
+    .budget input::placeholder {
+        color: #ffff;
+        padding-left: 10px;
+    }
+
+    .spent h3 {
+        font-size: 20px;
+    }
+
+    .spent h1 {
+        font-size: 25px;
+    }
+
+    #add {
+        position: relative;
+        left: 80%;
+    }
+}
